@@ -86,7 +86,7 @@ export async function POST(
     mockNotes[dealId].unshift(newNote)
 
     return NextResponse.json({ note: newNote }, { status: 201 })
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: 'Failed to create note' },
       { status: 500 }

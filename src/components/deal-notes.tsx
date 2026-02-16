@@ -4,7 +4,6 @@ import { useListDealNotes } from '@/lib/deals/hooks/use-list-deal-notes'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
-import type { DealNote } from '@/lib/deals/types/deal-note'
 
 interface DealNotesProps {
   dealId: string

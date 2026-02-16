@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { useState } from "react"
 
 export default function Home() {
-  const [dealId] = useState('deal-1')
+  const [dealId, setDealId] = useState('deal-1')
   const [noteContent, setNoteContent] = useState('')
   const [isPinned, setIsPinned] = useState(false)
   const createNote = useCreateDealNote()
@@ -38,7 +38,21 @@ export default function Home() {
       <div className="max-w-4xl mx-auto space-y-8">
         <div className="bg-white rounded-lg shadow-sm border border-zinc-200 p-6">
           <h1 className="text-3xl font-bold mb-2">Real Estate Deal Platform</h1>
-          <p className="text-zinc-600">Managing: Deal #{dealId}</p>
+          <p className="text-zinc-600 mb-4">Managing: Deal #{dealId}</p>
+          <div className="flex gap-2">
+            <button
+              onClick={() => setDealId('deal-1')}
+              className={`px-4 py-2 rounded ${dealId === 'deal-1' ? 'bg-blue-600 text-white' : 'bg-zinc-200 text-zinc-700'}`}
+            >
+              Deal 1 (Has Notes)
+            </button>
+            <button
+              onClick={() => setDealId('deal-2')}
+              className={`px-4 py-2 rounded ${dealId === 'deal-2' ? 'bg-blue-600 text-white' : 'bg-zinc-200 text-zinc-700'}`}
+            >
+              Deal 2 (Empty)
+            </button>
+          </div>
         </div>
 
         {/* Add Note Form */}
