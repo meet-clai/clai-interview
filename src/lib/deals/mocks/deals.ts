@@ -1,0 +1,53 @@
+import { Deal } from '../types/deal'
+
+export const MOCK_DEALS: Deal[] = [
+  {
+    id: '1',
+    name: '123 Main Street Sale',
+    description: 'Single-family residential property in downtown area',
+    category: 'real_estate',
+    transactionType: 'sale',
+    status: 'active',
+    createdAt: '2025-11-01T10:00:00Z',
+    updatedAt: '2025-11-15T14:30:00Z',
+  },
+  {
+    id: '2',
+    name: 'Office Park Lease - Building A',
+    description: 'Commercial office space, 5-year lease term',
+    category: 'real_estate',
+    transactionType: 'lease',
+    status: 'draft',
+    createdAt: '2025-12-01T09:00:00Z',
+    updatedAt: '2025-12-01T09:00:00Z',
+  },
+  {
+    id: '3',
+    name: 'Riverside Condo #402',
+    category: 'real_estate',
+    transactionType: 'sale',
+    status: 'closed',
+    createdAt: '2025-09-15T08:00:00Z',
+    updatedAt: '2025-10-20T16:45:00Z',
+  },
+  {
+    id: '4',
+    name: 'Warehouse District Retail Lease',
+    description: 'Ground-floor retail space, 2,400 sq ft',
+    category: 'real_estate',
+    transactionType: 'lease',
+    status: 'active',
+    createdAt: '2025-10-10T11:00:00Z',
+    updatedAt: '2025-11-05T13:20:00Z',
+  },
+  {
+    id: '5',
+    name: 'Elm Street Duplex',
+    description: 'Investment property, both units currently occupied',
+    category: 'real_estate',
+    transactionType: 'sale',
+    status: 'draft',
+    createdAt: '2026-01-05T10:00:00Z',
+    updatedAt: '2026-01-05T10:00:00Z',
+  },
+]
